@@ -64,3 +64,8 @@ button:hover {
 #jan6Card {
   display: none;
 }
+
+textarea {
+  margin: 5%;
+  height: 20%;
+}

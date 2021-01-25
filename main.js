@@ -2,7 +2,17 @@ const buttonJan4 = document.querySelector('#jan4');
 const buttonJan5 = document.querySelector('#jan5');
 const hiddenText = document.querySelector('.hiddenText')
 const jan5Card = document.querySelector('#jan5Card');
+const outputEl = document.querySelector('#output-target');
+const inputKey = document.querySelector('#keypress-input');
+const outputKey = document.querySelector('#keypress-output');
 
+document.getElementById('page-title').addEventListener('mouseover', function(event) {
+  outputEl.innerHTML = 'Are you trying to find out what I was doing in January?'
+});
+
+inputKey.addEventListener('keyup', function(event) {
+  outputKey.innerHTML = event.target.value;
+})
 
 
 const randomText = [
