@@ -6,6 +6,13 @@ const outputEl = document.querySelector('#output-target');
 const inputKey = document.querySelector('#keypress-input');
 const outputKey = document.querySelector('#keypress-output');
 
+function firstFunction(e) {
+  e.preventDefault();
+  buttonJan4.innerHTML = 'yay!';
+}
+
+buttonJan4.addEventListener('click', firstFunction);
+
 document.getElementById('page-title').addEventListener('mouseover', function(event) {
   outputEl.innerHTML = 'Are you trying to find out what I was doing in January?'
 });
