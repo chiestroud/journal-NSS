@@ -23,6 +23,7 @@ body {
 h2 {
   border: 2px solid orange;
   margin: 5px;
+  text-align: center;
 }
 
 p {
@@ -46,6 +47,7 @@ img {
 
 .nav {
   margin: 10px;
+  list-style: none;
 }
 
 button {
@@ -63,4 +65,20 @@ button:hover {
 
 #jan6Card {
   display: none;
+}
+
+textarea {
+  margin: 5%;
+  height: 20%;
+}
+
+@media all and (max-width: 699px) {
+  .jan-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .day-card {
+    width: 80%;
+  }
 }
