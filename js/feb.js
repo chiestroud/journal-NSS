@@ -45,22 +45,37 @@ const printToDom = (divId, textToShow) => {
 const febJournalBuilder = (taco) => {
   let showDom = '';
   taco.forEach((item, i) => {
-    showDom += `<div class="card m-1 style="width: 12rem;" id=${i}">
+    showDom += `<div class="card col-3 m-1" id=${i}">
                   <div class="card-header">
                     ${item.date}
                   </div>
                   <div class="card-body">
                     <p class="card-title">${item.note}</p>
                     <p class="card-text">${item.note2}</p>
-                    <button href="#" id="${item.id}"class="btn btn-danger">Delete</button>
+                    <button type="button" href="#" id="${i}" class="btn btn-danger">Delete</button>
                   </div>
                 </div>`
   })
   printToDom('#showJournal', showDom);
 }
 
+const buttonFunc = (e) => {
+  const buttonId = e.target.id;
+  const buttonType = e.target.type;
+  if (buttonType === 'button') {
+    document.querySelector('#show').innerHTML = `<p>You closed id # ${buttonId}</p>`
+    febJournal.splice(buttonId, 1);
+  } 
+  febJournalBuilder(febJournal);
+}
+
+const handleButtonClick = (e) => {
+  document.querySelector('#feb').addEventListener('click', buttonFunc);
+}
+
 const init = () => {
   febJournalBuilder(febJournal);
+  handleButtonClick();
 }
 
 init();
