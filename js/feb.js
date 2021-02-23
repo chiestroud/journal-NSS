@@ -34,7 +34,37 @@ const febJournal = [
     note: 'when only 1 js file needs to be shared - important to use location.pathname',
     note2: '',
     id: 13,
-  }
+  },
+  {
+    date: new Date('Feb 15 2021'),
+    note: "snow day, but watched video about setting up webpack and modules",
+    note2: '',
+    id: 15,
+  },
+  {
+    date: new Date('Feb 16 2021'),
+    note: "presentation of our group project. Went pretty well",
+    note2: '',
+    id: 16,
+  },
+  {
+    date: new Date('Feb 18 2021'),
+    note: "new group. assignment was bear watcher!",
+    note2: '',
+    id: 18,
+  },
+  {
+    date: new Date('Feb 20 2021'),
+    note: "Almost Amazon project started. Excited to learn firebase and authentication",
+    note2: 'Firebase code has to stay in .env file so it will be ignored. API key could get hacked if you accidentally push this up.',
+    id: 20,
+  },
+  {
+    date: new Date('Feb 22 2021'),
+    note: "Postman - tool to test your request. 400 error is error in client side, 500 error is server error, 200 is OK",
+    note2: "Starting Promise tomorrow - [async] function returns promise and [await] waits for promise to be resolved",
+    id: 22,
+  },
 ];
 
 const printToDom = (divId, textToShow) => {
