@@ -65,6 +65,12 @@ const febJournal = [
     note2: "Starting Promise tomorrow - [async] function returns promise and [await] waits for promise to be resolved",
     id: 22,
   },
+  {
+    date: new Date('Feb 23 2021'),
+    note: "Promise! if you don't catch error, your app will BREAK",
+    note2: "Object.value/object.keys => these are used to change object into array",
+    id: 23,
+  }
 ];
 
 const printToDom = (divId, textToShow) => {
