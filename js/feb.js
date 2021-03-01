@@ -70,6 +70,18 @@ const febJournal = [
     note: "Promise! if you don't catch error, your app will BREAK",
     note2: "Object.value/object.keys => these are used to change object into array",
     id: 23,
+  },
+  {
+    date: new Date('Feb 25 2021'),
+    note: "Tamagotchi project. Learned a new way to import different CSS files into main.scss",
+    note2: "Excited for the new project, but it's getting tougher",
+    id: 25,
+  },
+  {
+    date: new Date('Feb 27 2021'),
+    note: "Bookclub - readme is so important use image!!!!",
+    note2: "Firebase - you can't patch something that don't have key so id is necessary. Also I found out that e.preventDefault() bypasses the 'required' so no wonder my form was allowing blank form to be submitted. Lastly, if you want to search through something on firebase, you need to add RULES",
+    id: 27,
   }
 ];
 
